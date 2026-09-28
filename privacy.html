@@ -21,7 +21,13 @@
     @media (prefers-color-scheme: dark) {
       body { color: #e8e8e8; background: #121212; }
       a { color: #8ab4ff; }
-      .meta { background: #1e1e1e; border-color: #333; }
+      /* Keep meta on a light card so date/intro stay black and readable. */
+      .meta {
+        background: #f8fafc;
+        border-color: #e5e7eb;
+        color: #1a1a1a;
+      }
+      .meta p, .meta strong { color: #1a1a1a; }
     }
     h1 { font-size: 1.75rem; margin: 0 0 0.75rem; line-height: 1.25; }
     h2 { font-size: 1.2rem; margin: 2rem 0 0.75rem; }
@@ -35,8 +41,10 @@
       border: 1px solid #e5e7eb;
       border-radius: 10px;
       background: #f8fafc;
+      color: #1a1a1a;
       font-size: 0.95rem;
     }
+    .meta p, .meta strong { color: #1a1a1a; }
     .nav { font-size: 0.95rem; margin-bottom: 1.5rem; }
     footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: 0.9rem; opacity: 0.85; }
   </style>
